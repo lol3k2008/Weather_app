@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../bg.jpg');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ddd;
+    font-size: 18px;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.heroImg{
+position: absolute;
+top: 0;
+left: 0;
+width: 100vw;
+height: 100vh;
+background-color: rgba(17, 17, 17, 0.514);
+z-index: -1;
+
+}
+
+.container{
+    position: relative;
+width: 60%;
+height: 80%;
+max-width: 500px;
+border-radius: 20px;
+box-shadow: 0 0 20px 10px black;
+display: flex;
+flex-direction: column;
+overflow: hidden;
+
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%;
+    height: 10%; */
+    padding: 15px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.151);
+}
+.humity{
+    display: flex
+}
+.drop{
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-image: url('/img/drop.svg');
+    margin-right: 5px;
+}
+main{
+    width: 100%;
+}
+
+.celsius{
+    font-size: 3rem;
+    text-align: center;
+    padding: 2rem;
+}
+.cityName{
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.ico{
+    margin-left: 50%;
+    margin-right: 50%;
+    transform: translate(-50%, 0);
+    width: 100px;
+    height: 100px;
+    margin-bottom: 30px;
+   
+    
+}
+.form{
+    text-align: center;
+    margin-top: 10%;
+}
+.form input{
+    width: 60%;
+    height: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.377);
+    padding: 10px;
+}
+.form button{
+    position: relative;
+    width: 70px;
+    
+    border-radius: 5px;
+    padding: 3px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.377);
+    border: none;
+    overflow: hidden;
+}
+.form button::after{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #666;
+    top: 0px;
+    left: -70px;
+    transition: .5s;
+}
+.form button::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: #666;
+    bottom: 0px;
+    left: 70px;
+    transition: .5s;
+}
+button:hover::after{
+left: 0px;
+}
+button:hover::before{
+left: 0px;
+}
+footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+  text-align: center;
+    border-top: 1px solid rgba(0, 0, 0, 0.151);
+    font-size: 1rem;
+}

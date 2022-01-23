@@ -1,0 +1,32 @@
+@media (max-width: 480px) {
+.text{
+    font-size: 1rem;
+}
+.container{
+    width: 90vw;
+    height: 70vh;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.ico{
+    margin-bottom: 0px;
+}
+button{
+    margin-top: 10px;
+}
+
+  }
+
+@media (max-width: 360px) {
+
+.container{
+    width: 90vw;
+    height: 90vh;
+}
+
+
+  }
